@@ -1,0 +1,126 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: "Times New Roman";
+}
+.project{
+	height: 40vh;
+	width: 100%;
+	background: #f857a5; 
+	background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  
+	background: linear-gradient(to right, #ff5858, #f857a6); 
+}
+nav{
+    position: fixed;top:0;width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    padding: 0 2rem;
+    color: white;
+    z-index: 3;
+
+}
+nav .links a{
+    transition: 0.4s linear;
+    position: relative;
+}
+nav .links a:hover{
+    color: #EA7773;
+}
+.links a{
+    padding: 0 0.6rem;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.data{
+	box-shadow: 0px 6px 14px #adadad;
+	border-radius: 1rem;
+	background: #ffffff;
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	top: -15vh;
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+#data_image{
+	width: 100%;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem; 
+}
+.data_text{
+	padding: 0.5rem;
+	color: #0A3D62;
+}
+.link{
+	text-decoration: none;
+	outline: none;
+	border: none;
+	color: #000000;
+	background: rgba(0,0,0,0.2);
+	border-radius: 0.5rem;
+	padding: 0.3rem;
+	margin: 0.2rem;
+	transition: 0.2s ease;
+	display: inline-block;
+}
+.link:hover{
+	background: rgba(0,0,0,0.25);
+}
+.project-title{
+	box-shadow: 0px 6px 14px #adadad;
+	border-radius: 1rem;
+	background: #ffffff;
+	width: 70%;
+	margin: 1rem auto;
+	padding: 1rem;
+	position: relative;
+	top: -7vh;
+}
+.header{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+.skills{
+	margin: 1rem auto;
+	display: grid;grid-template-columns: 25% 25% 25% 25%;
+}
+.certificates{
+	margin: 1rem auto;
+	display: grid;grid-template-columns: 50% 50%;
+}
+.skill_image, .certificate_image{
+	width: 100%;
+}
+@media screen and (max-width: 700px) {
+	.main{
+		height: 30vh;
+	}	
+	.data{
+		width: 90%;
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.section{
+		width: 90%;
+		position: relative;
+	top: -10vh;
+	}
+	#data_image{
+		border-radius: 1rem;
+	}
+	.skills{
+	margin: 1rem auto;
+	display: grid;grid-template-columns: 50% 50%;
+	}
+	.certificates{
+	margin: 1rem auto;
+	display: grid;grid-template-columns: 100%;
+}
+}
